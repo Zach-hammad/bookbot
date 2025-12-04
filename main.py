@@ -1,3 +1,4 @@
+from collections.abc import Hashable
 from stats import count_word, count_char, sort_dict
 import sys
 
