@@ -1,3 +1,6 @@
+def sort_on(items):
+    return items["num"]
+
 def count_word(words):
     lst = words.split()
     return len(lst)
@@ -17,3 +20,12 @@ def count_char(words):
     except Exception as e:
         print(e)
     return char
+
+def sort_dict(chars):
+    lst = []
+    for i, j in chars.items():
+        lst.append({"char": i, "num": j})
+    lst.sort(reverse=True, key=sort_on)
+    return lst
+
+
