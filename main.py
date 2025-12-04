@@ -1,6 +1,4 @@
-def count_word(words):
-    lst = words.split()
-    return len(lst)
+from stats import count_word
 
 def get_book_text(fp):
     with open(fp) as f:
